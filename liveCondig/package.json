@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "Meli Maps",
   "scripts": {
-  	"start": "node index.js",
-   	"csv": "echo 'longitude,latitude' > meli-map.csv &&node index.js >> meli-map.csv"
+    "start": "node index.js",
+    "csv": "echo 'longitude,latitude' > meli-map.csv &&node index.js >> meli-map.csv"
   },
   "dependencies": {
-    "restler": "3.x.x",
-    "promise": "*"
+    "csv": "^1.1.1",
+    "fast-csv": "^2.4.0",
+    "promise": "*",
+    "restler": "3.x.x"
   },
   "author": "Pablo Moretti",
   "license": "ISC"
