@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Template presentation based on reveal.js intro</title>
+
+		<meta name="description" content="A dummy presentation for CodeAngelsJs Course">
+		<meta name="author" content="sudodoki / Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="shared/css/reveal.min.css">
+		<link rel="stylesheet" href="shared/css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="shared/css/additional.css">
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="shared/lib/css/zenburn.css">
+
+		<!--[if lt IE 9]>
+		<script src="shared/lib/js/html5shiv.js"></script>
+		<![endif]-->
+		<style>
+			.code{
+				color: navajowhite;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<!-- Section presentation  -->
+			<div class="slides">
+
+				<section>
+					<h1>WebServices</h1>
+					<h3>Sitemas distribuidos</h3>
+					<br>
+					<ol style="text-align: center; list-style-type: none">
+						<li>Johan Armando Villamil Gaitan <br>20171679024</li>
+						<li>Juan Jose Medina Sarmiento <br> 20171679053</li>
+					</ol>
+				</section>
+
+				<section>
+					<h3 style="color: lightgoldenrodyellow">¿Que son los webservices?</h3>
+					<h4>Son aplicaciones cliente-servidor que se comunican a través de la World Wide Web usando HTTP (HyperText Transfer Protocol) con la diferencia que NO poseen interfaz grafica. (Programas que conectan programas)</h4>
+					<p>Algunas Caracteristicas</p>
+					<br>
+					<p>proveen un estándar de interoperabilidad entre aplicaciones de software</p>
+						<p style="color: mediumspringgreen;">Tambien</p>
+					<p>Se caracterizan por su gran interoperabilidad y extensibilidad.</p>
+						<p style="color: mediumspringgreen;">Tambien</p>
+					<p>Permiten a las organizaciones compartir data sin la necesidad de conocer detalles de sus respectivos sistemas de información.</p>
+				</section>
+
+				<section>
+					<h3>Usos</h3>
+					<ol>
+						<li>Componentes de Aplicación Reutilizables</li>
+						<li>Conectar Software Existente</li>
+					</ol>
+				</section>
+
+				<section>
+						<h2 class="text-info">Componentes de Aplicación Reutilizables</h2>
+						<img src='img/WebService.png' alt='this here for showing how to embed
+						arbitrary images not from web'/>
+						<p class="text-justify">Hay funcionalidades que siempre se necesitan, ¿por que crearlas una y otra vez? Se pueden ofrecer componentes de aplicación que se usan muy a menudo como:           servicios de conversión de moneda, reportes del clima, o incluso traducción de lenguajes .</p>
+				</section>
+
+				<section>
+					<h2 class="text-info">Conectar Software Existente</h2>
+					<img height="250" src='img/rest.jpg' alt='this here for showing how to embed
+						arbitrary images not from web'/>
+					<p class="text-justify">Proveen una solución a los problemas de interoperabilidad brindando a diferentes aplicaciones una manera de conectar su información.Con un servicio web usted puede intercambiar data entre diferentes aplicaciones y diferentes plataformas. Estos servicios pueden ser creados sin importar el lenguaje de programación..</p>
+				</section>
+
+				<section>
+					<h2 class="text-success">Tecnología de los Web Services</h2>
+					<p class="text-justify">
+						Los Web Services están  construidos con varias tecnologías que trabajan conjuntamente con los estándares que están emergiendo para asegurar la seguridad y operatibilidad, de modo de hacer realidad que el uso combinado de varios Web Services, independiente de la o las empresas que los proveen, esté garantizado.
+					</p>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+
+					<section data-state="soothe">
+						<h2>XML</h2><code>Extensible Markup Language</code>
+						<p class="text-justify">
+							El XML es una especificación desarrollada por W3C. Permite a los desarrolladores crear sus propios tags, que les permiten habilitar definiciones, transmisiones, validaciones, e interpretación de los datos entre aplicaciones y entre organizaciones
+						</p>
+						<a href="#" class="image navigate-down">
+							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+
+					<section data-state="cobalt">
+						<h2>SOAP</h2>
+						<code> Simple Object Access Protocol </code>
+						<br><br>
+						<p class="text-justify">Es un protocolo de mensajería construido en XML que se usa para codificar información de los requerimientos de los Web Services. Los mensajes SOAP son independientes de los sistemas operativos y pueden ser transportados por los protocolos que funcionan en la Internet, como ser: SMTP, MIME y HTTP..</p>
+					</section>
+
+					<section data-state="submerge">
+						<h2>WSDL</h2>
+						<code> Web Services Description Language</code>
+						<br><br>
+						<p class="text-justify">Es un lenguaje especificado en XML que se ocupa para definir los Web Service como colecciones de punto de comunicación capaces de intercambiar mensajes. El WSDL es parte integral de UDDI y parte del registro global de XML, en otras palabras es un estándar de uso público (no se requiere pagar licencias para usarlo).</p>
+					</section>
+
+					<section data-state="sunset">
+						<h2>UDDI</h2>
+						<code> Universal Description, Discovery and Integration</code>
+						<br><br>
+						<p class="text-justify"> Es un directorio distribuido que opera en la Web  que permite a las empresas publicar sus Web Services, para que otras empresas conozcan y utilicen los Web Services que publican, opera de manera análoga a las páginas amarillas.</p>
+					</section>
+
+				</section>
+
+				<section>
+					<h2>RESTful Services</h2>
+					<code>Representational State Transfer</code>
+					<br><br>
+					<p>
+						Es un ESTILO  de Arquitectura a la hora de realizar una comunicación entre cliente y servidor.
+					</p>
+					<small>Tiene unas caracteristicas</small>
+				</section>
+
+				<section>
+					<h2>Tipologia de mensajes XML o JSON</h2>
+					<img src="img/http.png" alt="" width="500" height="250">
+				</section>
+
+				<section>
+					<h2>Basado en recursos  (en vez de servicios  -> SOAP)</h2>
+					<img src="img/post.png" alt="" width="500" height="250">
+				</section>
+
+				<section>
+					<h2>MLas operaciones son categorizadas de forma más estricta (Verbos HTTP)</h2>
+					<img src="img/resource.png" alt="" width="500" height="250">
+				</section>
+
+				<section>
+					<h2>Para recursos relacionados se utiliza  HATEOAS (Hypertext As The Engine Of Application State</h2>
+					<img src="img/hateoas.png" alt="" width="600" height="300">
+				</section>
+
+				<section >
+					<h2 class="text-danger">Ventajas</h2>
+					<ol>
+						<li class="fragment text-justify">Aportan interoperabilidad entre aplicaciones de software independientemente de sus propiedades o de las plataformas sobre las que se instalen.</li>
+						<br>
+						<li class="fragment text-justify">Los servicios Web fomentan los estándares y protocolos basados en texto, que hacen más fácil acceder a su contenido y entender su funcionamiento.</li>
+					</ol>
+				</section>
+
+				<section id="transitions">
+					<h2 class="text-danger">Mas Ventajas</h2>
+					<ol>
+						<li class="fragment text-justify">Permiten que servicios y software de diferentes compañías ubicadas en diferentes lugares geográficos puedan ser combinados fácilmente para proveer servicios integrados.</li>
+					</ol>
+				</section>
+
+				<section id="themes">
+					<h2 class="text-warning">Desventajas</h2>
+					<ul>
+						<li class="fragment text-justify">
+							Su rendimiento es bajo si se compara con otros modelos de computación distribuida, tales como Java Remote Method Invocation (RMI), CORBA o Distributed Component Object Model (DCOM). Es uno de los inconvenientes derivados de adoptar un formato basado en texto. Y es que entre los objetivos de XML no se encuentra la concisión ni la eficacia de procesamiento.
+						</li>
+					</ul>
+				</section>
+
+				<section>
+
+					<section data-state="alert">
+						<h2>Mas Desventajas</h2>
+						<ul>
+							<li class="fragment text-justify">
+								Para realizar transacciones no pueden compararse en su grado de desarrollo con los estándares abiertos de computación distribuida como CORBA (Common Object Request Broker Architecture).
+							</li>
+							<br><br>
+							<li class="fragment text-justify">
+								Al apoyarse en HTTP, pueden esquivar medidas de seguridad basadas en firewall cuyas reglas tratan de bloquear o auditar la comunicación entre programas a ambos lados de la barrera.
+							</li>
+						</ul>
+					</section>
+
+					<section data-state="blackout">
+						<h2>"Ejemplo"</h2>
+						<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
+							<img width="750" height="400" src="img/bigImage.JPG" alt="Meny">
+						</a>
+					</section>
+				</section>
+
+				<section data-state="customevent">
+					<h2>Sitios Web 1992</h2>
+					<img src="img/23e620b704971215a325eba21b36db4f.png" alt="">
+				</section>
+
+				<section>
+					<h2>Servicios Web (2000)</h2>
+					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						<img src="img/8f7b5bc2a047369a44d3eb9008a84fb4.png" alt="">
+					</blockquote>
+				</section>
+
+				<section>
+					<h2>Comparativa tres</h2>
+					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						<img src="img/0dac9c96e1d816d2b921d47dc2b9857a.png" alt="">
+					</blockquote>
+				</section>
+
+				<section>
+					<h2>Conclusiones</h2>
+					<ul>
+						<li class="fragment text-justify">
+							Se pueden implementar funciones imposibles de contemplar bajo el uso de rutinas de librerías, como por ejemplo, incorporar un buscador de páginas web.
+						</li>
+						<li class="fragment text-justify">
+							La carga de CPU que supone la ejecución de una rutina desaparece. La carga se reparte por Internet.
+						</li>
+						<li class="fragment text-justify">
+							Los Servicios Web no son una versión mejorada de las librerías o módulos de programación.
+						</li>
+						<li class="fragment text-justify">
+							Los servicios web serán o no útiles en función de la funcionalidad que ofrezcan, siempre y cuando sea sencilla su utilización.
+						</li>
+					</ul>
+				</section>
+
+				<section data-state="whiteout">
+					<h1>Live Coding</h1>
+				</section>
+
+				<section>
+					<h1>GRACIAS</h1>
+					<h3>Bibliografia</h3>
+					<blockquote>
+						<a href="https://msaffirio.com/2006/02/05/%C2%BFque-son-los-web-services/">https://msaffirio.com/2006/02/05/%C2%BFque-son-los-web-services/</a>
+						<a href="https://es.wikipedia.org/wiki/Servicio_web">https://es.wikipedia.org/wiki/Servicio_web</a>
+						<a href="http://www.drdobbs.com/web-development/restful-web-services-a-tutorial/240169069">http://www.drdobbs.com/web-development/restful-web-services-a-tutorial/240169069/</a>
+						<a href="http://www.arquitecturajava.com/que-es-rest/">http://www.arquitecturajava.com/que-es-rest/</a>
+					</blockquote>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="shared/lib/js/head.min.js"></script>
+		<script src="shared/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'shared/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'shared/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'shared/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'shared/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'shared/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'shared/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
